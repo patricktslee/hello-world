@@ -1,9 +1,14 @@
+comment="No comment in this update"
+branch=master
+while getopts m:b: flag
+do
+    case "${flag}" in
+        m) comment=${OPTARG};;
+        b) branch=${OPTARG};;
+    esac
+done
+echo "Comment: $comment";
+
 git add .
-if [ -z "$1" ]
-  echo "Comment is $1"
-  echo git commit -m $1
-  then
-    echo "No arguments supplied"
-    git commit -m "No comment"
-fi
-git push origin master
+git commit -m '$comment'
+git push origin $branch
