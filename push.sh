@@ -1,4 +1,4 @@
-comment="No comment in this update"
+comment='No comment in this update'
 branch=master
 while getopts m:b: flag
 do
@@ -10,5 +10,5 @@ done
 echo "Comment: $comment";
 
 git add .
-git commit -m '$comment'
+git commit -m "$comment"
 git push origin $branch
