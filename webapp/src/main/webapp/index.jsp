@@ -7,4 +7,4 @@
 <h2> Another Update from Github for the Ansible script auto deploy to docker container</h2>
 <p>Six more update.</p>
 <p>Update docker push and setup the Kube file.</p>
-<p>Running it in K3s.</p>
+<p>Running it in K3s and update</p>
